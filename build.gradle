@@ -7,6 +7,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.6.0'
     id 'jacoco'
     id 'com.adarshr.test-logger' version '3.2.0'
+    id 'org.checkerframework' version '0.6.35'
 }
 
 sourceCompatibility = '11'
@@ -202,6 +203,13 @@ jacocoTestReport {
         xml.enabled true
         html.enabled true
     }
+}
+
+apply plugin: 'org.checkerframework'
+checkerFramework {
+    checkers = [
+            'org.checkerframework.checker.optional.OptionalChecker',
+    ]
 }
 
 check.dependsOn jacocoTestReport
