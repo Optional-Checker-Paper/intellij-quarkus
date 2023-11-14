@@ -142,6 +142,7 @@ public class PropertiesCollector implements IPropertiesCollector {
 		return configProperty;
 	}
 
+  @SuppressWarnings("prefer.ifpresent") // prefer-ifpresent : better style to use ifpresent
 	private void mergeWithReplace(ItemMetadata property) {
 		Optional<ItemMetadata> configProperty = getExistingProperty(property);
 		if (configProperty.isPresent()) {
@@ -167,6 +168,7 @@ public class PropertiesCollector implements IPropertiesCollector {
 		}
 	}
 
+  @SuppressWarnings("prefer.ifpresent") // prefer-ifpresent : better style to use ifpresent
 	private static void merge(List<ValueHint> from, ItemHint to, MergingStrategy mergingStrategy) {
 		if (from == null || from.isEmpty()) {
 			return;
