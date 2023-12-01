@@ -7,6 +7,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.6.0'
     id 'jacoco'
     id 'com.adarshr.test-logger' version '3.2.0'
+    id "net.ltgt.errorprone" version "3.1.0"
 }
 
 sourceCompatibility = '11'
@@ -176,6 +177,7 @@ dependencies {
         builtBy 'copyDeps'
     }
     testImplementation 'org.assertj:assertj-core:3.19.0'
+    errorprone("com.google.errorprone:error_prone_core:2.23.0")
 }
 
 
@@ -203,6 +205,15 @@ jacocoTestReport {
         html.enabled true
     }
 }
+
+tasks.withType(JavaCompile).configureEach {
+   options.errorprone.disableWarningsInGeneratedCode = true
+   options.errorprone.disableAllChecks = true
+   options.errorprone.enable("NullOptional", "NullableOptional",
+     "OptionalMapToOptional", "OptionalNotPresent", "OptionalEquality",
+     "OptionalMapUnusedValue", "OptionalOfRedundantMethod", "UnnecessaryOptionalGet",
+   )
+ }
 
 check.dependsOn jacocoTestReport
 
