@@ -7,6 +7,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.6.0'
     id 'jacoco'
     id 'com.adarshr.test-logger' version '3.2.0'
+    id "com.github.spotbugs" version "5.2.5"
 }
 
 sourceCompatibility = '11'
@@ -205,6 +206,14 @@ jacocoTestReport {
 }
 
 check.dependsOn jacocoTestReport
+
+spotbugs {
+     ignoreFailures = true
+     toolVersion = '4.8.2'
+     effort = 'default'
+     reportLevel = 'default'
+     reportsDir = file("$buildDir/spotbugs")
+ }
 
 group 'com.redhat.devtools.intellij'
 version projectVersion // Plugin version
