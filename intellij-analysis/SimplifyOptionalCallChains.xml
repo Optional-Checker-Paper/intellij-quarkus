@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java</file>
+  <line>180</line>
+  <module>intellij-quarkus.main</module>
+  <package>com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core</package>
+  <entry_point TYPE="method" FQNAME="com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core.PropertiesCollector void merge(java.util.List&lt;org.eclipse.lsp4mp.commons.metadata.ValueHint&gt; from, org.eclipse.lsp4mp.commons.metadata.ItemHint to, com.redhat.devtools.intellij.lsp4mp4ij.psi.core.IPropertiesCollector.MergingStrategy mergingStrategy)" />
+  <problem_class id="SimplifyOptionalCallChains" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Optional call chain can be simplified</problem_class>
+  <description>Can be replaced with 'isEmpty()'</description>
+  <highlighted_element>isPresent</highlighted_element>
+  <language>JAVA</language>
+  <offset>65</offset>
+  <length>9</length>
+</problem>
+</problems>

@@ -144,6 +144,8 @@ public class PropertiesCollector implements IPropertiesCollector {
 
 	private void mergeWithReplace(ItemMetadata property) {
 		Optional<ItemMetadata> configProperty = getExistingProperty(property);
+		// intellij-suppression-optional-is-present
+		//noinspection OptionalIsPresent
 		if (configProperty.isPresent()) {
 			configuration.getProperties().remove(configProperty.get());
 		}
@@ -177,12 +179,16 @@ public class PropertiesCollector implements IPropertiesCollector {
 		for (ValueHint fromValue : from) {
 			switch (mergingStrategy) {
 				case IGNORE_IF_EXISTS:
+					// intellij-suppression-simplify-optional-call-chains
+					//noinspection SimplifyOptionalCallChains
 					if (!getExistingValue(fromValue.getValue(), to.getValues()).isPresent()) {
 						to.getValues().add(fromValue);
 					}
 					break;
 				case REPLACE:
 					Optional<ValueHint> existingValue = getExistingValue(fromValue.getValue(), to.getValues());
+					// intellij-suppression-optional-is-present
+					//noinspection OptionalIsPresent
 					if (existingValue.isPresent()) {
 						to.getValues().remove(existingValue.get());
 					}

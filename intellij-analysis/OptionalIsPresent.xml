@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java</file>
+  <line>147</line>
+  <module>intellij-quarkus.main</module>
+  <package>com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core</package>
+  <entry_point TYPE="method" FQNAME="com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core.PropertiesCollector void mergeWithReplace(org.eclipse.lsp4mp.commons.metadata.ItemMetadata property)" />
+  <problem_class id="OptionalIsPresent" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Non functional style 'Optional.isPresent()' usage</problem_class>
+  <description>Can be replaced with single expression in functional style</description>
+  <highlighted_element>configProperty.isPresent()</highlighted_element>
+  <language>JAVA</language>
+  <offset>6</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java</file>
+  <line>186</line>
+  <module>intellij-quarkus.main</module>
+  <package>com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core</package>
+  <entry_point TYPE="method" FQNAME="com.redhat.devtools.intellij.lsp4mp4ij.psi.internal.core.PropertiesCollector void merge(java.util.List&lt;org.eclipse.lsp4mp.commons.metadata.ValueHint&gt; from, org.eclipse.lsp4mp.commons.metadata.ItemHint to, com.redhat.devtools.intellij.lsp4mp4ij.psi.core.IPropertiesCollector.MergingStrategy mergingStrategy)" />
+  <problem_class id="OptionalIsPresent" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Non functional style 'Optional.isPresent()' usage</problem_class>
+  <description>Can be replaced with single expression in functional style</description>
+  <highlighted_element>existingValue.isPresent()</highlighted_element>
+  <language>JAVA</language>
+  <offset>9</offset>
+  <length>25</length>
+</problem>
+</problems>
