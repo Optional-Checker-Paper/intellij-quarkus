@@ -48,6 +48,7 @@ repositories {
     maven {
         url 'https://packages.jetbrains.team/maven/p/ij/intellij-dependencies'
     }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
 configurations {
@@ -214,8 +215,17 @@ checkerFramework {
       '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
       '-AassumePure',
       '-AwarnUnneededSuppressions'
-   ]
-   excludeTests = true
+    ]
+    excludeTests = true
+    ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
+    dependencies {
+        compileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+        testCompileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+        checkerFramework "org.checkerframework:checker:${checkerFrameworkVersion}"
+    }
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
 }
 
 check.dependsOn jacocoTestReport
