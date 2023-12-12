@@ -142,7 +142,7 @@ public class PropertiesCollector implements IPropertiesCollector {
 		return configProperty;
 	}
 
-  @SuppressWarnings("optional:prefer.ifpresent") // prefer-ifpresent
+  @SuppressWarnings("optional:prefer.ifpresent") // style-prefer-ifpresent
 	private void mergeWithReplace(ItemMetadata property) {
 		Optional<ItemMetadata> configProperty = getExistingProperty(property);
 		if (configProperty.isPresent()) {
@@ -168,7 +168,7 @@ public class PropertiesCollector implements IPropertiesCollector {
 		}
 	}
 
-  @SuppressWarnings("optional:prefer.ifpresent") // prefer-ifpresent
+  @SuppressWarnings("optional:prefer.ifpresent") // style-prefer-ifpresent
 	private static void merge(List<ValueHint> from, ItemHint to, MergingStrategy mergingStrategy) {
 		if (from == null || from.isEmpty()) {
 			return;
