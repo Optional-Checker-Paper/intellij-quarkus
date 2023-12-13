@@ -210,12 +210,14 @@ apply plugin: 'org.checkerframework'
 checkerFramework {
     checkers = [
             'org.checkerframework.checker.optional.OptionalChecker',
+            'org.checkerframework.common.util.report.ReportChecker',
     ]
     extraJavacArgs = [
       '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
       '-AassumePure',
       '-AwarnUnneededSuppressions',
       '-AassumeAssertionsAreEnabled',
+      "-Astubs=${project.projectDir}/reportoptional.astub",
     ]
     excludeTests = true
     ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
