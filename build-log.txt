@@ -1,0 +1,241 @@
+
+> Task :initializeIntelliJPlugin
+[gradle-intellij-plugin :initializeIntelliJPlugin] Gradle IntelliJ Plugin is outdated: 1.14.2. Update `org.jetbrains.intellij` to: 1.16.1
+
+> Task :copyDeps
+
+> Task :patchPluginXml
+[gradle-intellij-plugin :patchPluginXml] Patching plugin.xml: value of 'version[1.0]' tag will be set to '1.26.1-SNAPSHOT'
+
+> Task :verifyPluginConfiguration
+[gradle-intellij-plugin :verifyPluginConfiguration] The following plugin configuration issues were found:
+- The Java configuration specifies sourceCompatibility=11 but IntelliJ Platform 2022.2 requires sourceCompatibility=17.
+See: https://jb.gg/intellij-platform-versions
+
+> Task :compileKotlin
+> Task :createCheckerFrameworkManifest
+
+> Task :compileJava
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/codeaction/CodeActionHandler.java:204: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.findFirst().orElse(null);
+					                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/codeaction/CodeActionHandler.java:204: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.findFirst().orElse(null);
+					            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:131: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ItemMetadata> configProperty = getExistingProperty(property);
+		                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:131: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ItemMetadata> configProperty = getExistingProperty(property);
+		                                                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:132: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (configProperty.isPresent()) {
+		                            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:132: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (configProperty.isPresent()) {
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private Optional<ItemMetadata> getExistingProperty(ItemMetadata property) {
+	                               ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ItemMetadata> configProperty = configProperties.stream()
+		                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:141: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+				.filter(cp -> cp.getName().equals(property.getName())).findFirst();
+				                                                                ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private Optional<ItemMetadata> getExistingProperty(ItemMetadata property) {
+	                               ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:142: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return configProperty;
+		       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:146: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ItemMetadata> configProperty = getExistingProperty(property);
+		                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:146: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ItemMetadata> configProperty = getExistingProperty(property);
+		                                                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (configProperty.isPresent()) {
+		                            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:147: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (configProperty.isPresent()) {
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:148: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+			configuration.getProperties().remove(configProperty.get());
+			                                                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:148: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+			configuration.getProperties().remove(configProperty.get());
+			                                                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					if (!getExistingValue(fromValue.getValue(), to.getValues()).isPresent()) {
+					                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:180: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					if (!getExistingValue(fromValue.getValue(), to.getValues()).isPresent()) {
+					                                                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:185: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+					Optional<ValueHint> existingValue = getExistingValue(fromValue.getValue(), to.getValues());
+					                    ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:185: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+					Optional<ValueHint> existingValue = getExistingValue(fromValue.getValue(), to.getValues());
+					                                                    ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:186: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					if (existingValue.isPresent()) {
+					                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:186: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					if (existingValue.isPresent()) {
+					                 ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+						to.getValues().remove(existingValue.get());
+						                                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+						to.getValues().remove(existingValue.get());
+						                                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private static Optional<ValueHint> getExistingValue(String name, List<ValueHint> values) {
+	                                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private static Optional<ValueHint> getExistingValue(String name, List<ValueHint> values) {
+	                                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/PropertiesCollector.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return values.stream().filter(cp -> cp.getValue().equals(name)).findFirst();
+		                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/ChangeUtil.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					.isPresent();
+					          ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/ChangeUtil.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					.isPresent();
+					^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/ChangeUtil.java:123: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+				.findFirst().isPresent();
+				                      ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/core/java/ChangeUtil.java:123: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+				.findFirst().isPresent();
+				            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/faulttolerance/java/MicroProfileFaultToleranceASTValidator.java:262: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		return allowedReturnTypesForAsynchronousAnnotation.stream().filter(s -> returnType.startsWith(s)).findFirst().isPresent();
+		                                                                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/faulttolerance/java/MicroProfileFaultToleranceASTValidator.java:262: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		return allowedReturnTypesForAsynchronousAnnotation.stream().filter(s -> returnType.startsWith(s)).findFirst().isPresent();
+		                                                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:102: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<PsiClass> typeDeclarationOpt = PsiTreeUtil.findChildrenOfType(cu, PsiClass.class).stream() //
+		                   ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:106: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+				.findFirst();
+				          ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:108: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+		if (typeDeclarationOpt.isEmpty()) {
+		                              ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:108: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+		if (typeDeclarationOpt.isEmpty()) {
+		                      ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:112: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		PsiClass typeDeclaration = typeDeclarationOpt.get();
+		                                                 ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4mp4ij/psi/internal/openapi/java/MicroProfileGenerateOpenAPIOperation.java:112: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		PsiClass typeDeclaration = typeDeclarationOpt.get();
+		                                             ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/module/QuarkusModuleInfoStep.java:115: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            streamModel.setSelectedItem(model.getStreams().stream().filter(QuarkusStream::isRecommended).findFirst().orElse(model.getStreams().get(0)));
+                                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/module/QuarkusModuleInfoStep.java:115: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            streamModel.setSelectedItem(model.getStreams().stream().filter(QuarkusStream::isRecommended).findFirst().orElse(model.getStreams().get(0)));
+                                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/gradle/AbstractGradleToolDelegate.java:305: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        return Stream.of(manager.getOrderEntries()).filter(entry -> entry instanceof LibraryOrderEntry && (GRADLE_LIBRARY_PREFIX + deploymentIdStr).equals(((LibraryOrderEntry)entry).getLibraryName())).findFirst().isPresent();
+                                                                                                                                                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/gradle/AbstractGradleToolDelegate.java:305: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        return Stream.of(manager.getOrderEntries()).filter(entry -> entry instanceof LibraryOrderEntry && (GRADLE_LIBRARY_PREFIX + deploymentIdStr).equals(((LibraryOrderEntry)entry).getLibraryName())).findFirst().isPresent();
+                                                                                                                                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/gradle/AbstractGradleToolDelegate.java:309: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        return Stream.of(manager.getOrderEntries()).filter(entry -> entry instanceof LibraryOrderEntry && ((LibraryOrderEntry) entry).getLibraryName().startsWith(GRADLE_LIBRARY_PREFIX + groupId + ':' + artifactId)).findFirst().isPresent();
+                                                                                                                                                                                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/quarkus/gradle/AbstractGradleToolDelegate.java:309: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+        return Stream.of(manager.getOrderEntries()).filter(entry -> entry instanceof LibraryOrderEntry && ((LibraryOrderEntry) entry).getLibraryName().startsWith(GRADLE_LIBRARY_PREFIX + groupId + ':' + artifactId)).findFirst().isPresent();
+                                                                                                                                                                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:136: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            Optional<DataModelTemplate<DataModelParameter>> existingTemplate = templates.stream()
+                                                            ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                    .findFirst();
+                              ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:139: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+            if (existingTemplate.isEmpty()) {
+                                        ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:139: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+            if (existingTemplate.isEmpty()) {
+                                ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+                template = existingTemplate.get();
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/qute/psi/internal/template/datamodel/CheckedTemplateSupport.java:143: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+                template = existingTemplate.get();
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/LanguageServiceAccessor.java:314: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<LanguageServersRegistry.LanguageServerDefinition> resolveServerDefinition(LanguageServer languageServer) {
+                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/LanguageServiceAccessor.java:314: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<LanguageServersRegistry.LanguageServerDefinition> resolveServerDefinition(LanguageServer languageServer) {
+                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/LanguageServiceAccessor.java:316: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+            return startedServers.stream().filter(wrapper -> languageServer.equals(wrapper.getServer())).findFirst().map(wrapper -> wrapper.serverDefinition);
+                                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/LanguageServiceAccessor.java:316: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            return startedServers.stream().filter(wrapper -> languageServer.equals(wrapper.getServer())).findFirst().map(wrapper -> wrapper.serverDefinition);
+                                                                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/LanguageServiceAccessor.java:316: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            return startedServers.stream().filter(wrapper -> languageServer.equals(wrapper.getServer())).findFirst().map(wrapper -> wrapper.serverDefinition);
+                                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/operations/completion/LSPCompletionProposal.java:285: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+                .ifPresent(id -> {
+                          ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/operations/completion/LSPCompletionProposal.java:285: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+                .ifPresent(id -> {
+                ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/operations/completion/LSPCompletionProposal.java:284: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .resolveServerDefinition(languageServer.getServer()).map(definition -> definition.id)
+                                                                        ^
+/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/src/main/java/com/redhat/devtools/intellij/lsp4ij/operations/completion/LSPCompletionProposal.java:284: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .resolveServerDefinition(languageServer.getServer()).map(definition -> definition.id)
+                                                                    ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+61 warnings
+
+> Task :processResources
+> Task :classes
+> Task :instrumentCode
+> Task :classpathIndexCleanup
+> Task :instrumentedJar
+> Task :inspectClassesForKotlinIC
+> Task :jar
+> Task :prepareSandbox
+
+> Task :buildSearchableOptions
+systemProperties = {}
+LaunchSystemArgumentProvider = [-Didea.config.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/config, -Didea.system.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/system, -Didea.log.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/system/log, -Didea.plugins.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/plugins, -Didea.required.plugins.id=com.redhat.devtools.intellij.quarkus]
+Starting searchable options index builder
+2023-12-14 11:38:02,309 [   1909]   WARN - #c.i.n.i.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@87b876e). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2022.2/42c296374014a649785bb84aa6d8dc2d18f2ca0e/ideaIC-2022.2/plugins/cwm-plugin, version=222.3345.118, package=null, isBundled=true)
+2023-12-14 11:38:03,379 [   2979]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 11:38:03,380 [   2980]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 11:38:07,260 [   6860]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 11:38:07,392 [   6992]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.components.JBList
+2023-12-14 11:38:08,059 [   7659]   WARN - #c.i.u.j.JBCefApp - JCEF is manually disabled in headless env via 'ide.browser.jcef.headless.enabled=false'
+Found 221 configurables
+Searchable options index builder completed
+
+> Task :jarSearchableOptions
+> Task :buildPlugin
+> Task :assemble
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 29s
+17 actionable tasks: 17 executed
