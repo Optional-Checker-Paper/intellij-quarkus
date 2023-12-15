@@ -218,12 +218,12 @@ Note: Recompile with -Xlint:unchecked for details.
 systemProperties = {}
 LaunchSystemArgumentProvider = [-Didea.config.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/config, -Didea.system.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/system, -Didea.log.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/system/log, -Didea.plugins.path=/tmp/experiments/optional-paper-counts-repos/intellij-quarkus/build/idea-sandbox/plugins, -Didea.required.plugins.id=com.redhat.devtools.intellij.quarkus]
 Starting searchable options index builder
-2023-12-14 11:38:02,309 [   1909]   WARN - #c.i.n.i.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@87b876e). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2022.2/42c296374014a649785bb84aa6d8dc2d18f2ca0e/ideaIC-2022.2/plugins/cwm-plugin, version=222.3345.118, package=null, isBundled=true)
-2023-12-14 11:38:03,379 [   2979]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
-2023-12-14 11:38:03,380 [   2980]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
-2023-12-14 11:38:07,260 [   6860]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
-2023-12-14 11:38:07,392 [   6992]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.components.JBList
-2023-12-14 11:38:08,059 [   7659]   WARN - #c.i.u.j.JBCefApp - JCEF is manually disabled in headless env via 'ide.browser.jcef.headless.enabled=false'
+2023-12-14 19:19:23,394 [   2267]   WARN - #c.i.n.i.NotificationGroupManagerImpl - Notification group CodeWithMe is already registered (group=com.intellij.notification.NotificationGroup@55314067). Plugin descriptor: PluginDescriptor(name=Code With Me, id=com.jetbrains.codeWithMe, descriptorPath=plugin.xml, path=~/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2022.2/42c296374014a649785bb84aa6d8dc2d18f2ca0e/ideaIC-2022.2/plugins/cwm-plugin, version=222.3345.118, package=null, isBundled=true)
+2023-12-14 19:19:24,505 [   3378]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 19:19:24,506 [   3379]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 19:19:28,681 [   7554]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.ToolbarDecorator$2
+2023-12-14 19:19:28,824 [   7697]   WARN - Jetbrains UI DSL - Unsupported labeled component: com.intellij.ui.components.JBList
+2023-12-14 19:19:29,518 [   8391]   WARN - #c.i.u.j.JBCefApp - JCEF is manually disabled in headless env via 'ide.browser.jcef.headless.enabled=false'
 Found 221 configurables
 Searchable options index builder completed
 
